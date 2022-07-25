@@ -8,5 +8,5 @@
 Learning Rust Lang with Tutorials and Articles 
 </p>
 
-1.  [A Half-Hour to Learn Rust](/Rust_101/a_half_hour_to_learn_rust)
-2.  [CLI Calculator](/Rust_101/cli_calculator)
+1.  [A Half-Hour to Learn Rust](/rust_101/a_half_hour_to_learn_rust)
+2.  [CLI Calculator](/rust_101/cli_calculator)
