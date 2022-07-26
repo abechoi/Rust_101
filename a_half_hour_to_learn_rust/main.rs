@@ -17,10 +17,11 @@ fn main() {
 
     println!("pair = ({}, {})", pair.0, pair.1);
 
-    // Destructuring Tuples
+    // destructuring tuples
+    // x equals pair.0 and y equals pair.1
     let (x , y) = pair;
 
-    println!("{} {}", x , y);
+    println!("(x, y) = ({}, {})", x , y);
 
-
+    // 
 }
