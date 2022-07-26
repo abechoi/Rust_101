@@ -1,3 +1,8 @@
+struct Person {
+    name: String,
+    age: i32,
+}
+
 fn main() {
 
     // x of type i32 equals 42.
@@ -23,5 +28,15 @@ fn main() {
 
     println!("(x, y) = ({}, {})", x , y);
 
-    // 
+    // A pair of brackets declare a block, which has its own scope
+    let x = "out";
+    {
+        let x = "in";
+        println!("inner x = {}", x);
+    }
+    println!("outter x = {}", x);
+
+    // Struct
+    let x =  Person {name: "Abe".to_string(), age: 35};
+    println!("Struct Person: x.name = {}, x.age = {}", x.name, x.age);
 }
