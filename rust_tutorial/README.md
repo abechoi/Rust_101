@@ -7,8 +7,8 @@
 <p align="center">
 Youtube: Rust Tutorial from [Tech With Tim](https://www.youtube.com/watch?v=T_KrYLW4jw8&list=PLzMcBGfZo4-nyLTlSRBvo0zjSnCnqjHYQ&ab_channel=TechWithTim)</p>
 
-1.  [Rust Tools](#chapter-i)
-2.  [Chapter II](#chapter-ii)
+1.  [Installation](#Installation)
+2.  [Rust Tools](#Rust-Tools)
 3.  [Chapter III](#chapter-iii)
 4.  [Chapter IV](#chapter-iv)
 5.  [Chapter V](#chapter-v)
@@ -19,20 +19,35 @@ Youtube: Rust Tutorial from [Tech With Tim](https://www.youtube.com/watch?v=T_Kr
 10. [Chapter X](#chapter-x)
 
 
-## Chapter I
+## Installation
 
-Enter information about Chapter I.
+For MacOS, run the command and restart terminal.
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+## Rust Tools
+
+Create and run a new Rust project with Cargo package manager (Recommended).
+```
+# creates new project
+cargo new project_name
+
+# compiles and runs project
+cargo run
+
+# updates dependencies and libraries
+cargo build
+```
 
 ```
-# this ia a code block for chapter i.
+# builds a binary file from rs file
+rustc main.rs
 ```
 
-## Chapter II
-
-Enter information about Chapter II.
-
 ```
-# this ia a code block for chapter ii.
+# format to optimize rs file
+rustfmt main.rs
 ```
 
 ## Chapter III
