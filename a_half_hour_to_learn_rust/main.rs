@@ -1,3 +1,5 @@
+use std::cmp::{min, max};
+
 struct Person {
     name: String,
     age: i32,
@@ -39,4 +41,18 @@ fn main() {
     // Struct
     let x =  Person {name: "Abe".to_string(), age: 35};
     println!("Struct Person: x.name = {}, x.age = {}", x.name, x.age);
+
+    // Create and use a function with len() function.
+    let message = "How long is this message?";
+    println!("The message length is {} characters", message.len());
+
+    // Create and use a function with min() and max() function.
+    let a = (2, 5);
+    let b = (9, 1);
+    
+    let min = min(a.0, a.1);
+    let max = max(b.0, b.1);
+
+    println!("min = {}, max = {}", min, max);
+
 }
