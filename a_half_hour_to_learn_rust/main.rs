@@ -1,8 +1,27 @@
 use std::cmp::{min, max};
+use std::marker::Copy;
 
 struct Person {
     name: String,
     age: i32,
+}
+
+impl Person {
+    fn introduce(self){
+        println!("Hello, my name is {}!", self.name)
+    }
+}
+
+struct Number {
+    odd: bool,
+    value: i32,
+}
+
+impl Copy for Number { }
+impl Clone for Number {
+    fn clone(&self) -> Number {
+        *self
+    }
 }
 
 fn main() {
@@ -39,14 +58,15 @@ fn main() {
     println!("outter x = {}", x);
 
     // Struct
-    let x =  Person {name: "Abe".to_string(), age: 35};
+    let x =  Person {name: String::from("Abe"), age: 35};
     println!("Struct Person: x.name = {}, x.age = {}", x.name, x.age);
+    x.introduce();
 
-    // Create and use a function with len() function.
+    // Use len() function.
     let message = "How long is this message?";
     println!("The message length is {} characters", message.len());
 
-    // Create and use a function with min() and max() function.
+    // Use min() and max() functions.
     let a = (2, 5);
     let b = (9, 1);
     
@@ -55,4 +75,42 @@ fn main() {
 
     println!("min = {}, max = {}", min, max);
 
+    // Vectors - print out a vector with even numbers only
+    let list: Vec<i32> = vec![1,2,3,4,5,6];
+    let sublist: Vec<i32> = list.into_iter().filter(|x| *x % 2 == 0).collect();
+    println!("{:?}", sublist);
+
+    // Create a function using match
+    let number: i32 = 2;
+    println!("{}", number_to_string(number)); 
+
+    // Create a function that matches patterns of a struct
+    let x: Number = Number {odd: true, value: 1};
+    let y: Number = Number {odd: false, value: 2};
+
+    odds_or_evens(x);
+    odds_or_evens(y);
+
+
+    let z = x;
+    odds_or_evens(z);
+}
+
+fn number_to_string(number: i32) -> String{
+    match number{
+        1 => String::from("One"),
+        2 => String::from("Two"),
+        3 => String::from("Three"),
+        4 => String::from("Four"),
+        5 => String::from("Five"),
+        6 => String::from("Six"),
+        _ => String::from("Error: number out of bounds...")
+    }
+}
+
+fn odds_or_evens(n: Number){
+    match n {
+        Number {odd: true, value} => println!("{} is odds!", value),
+        Number {odd: false, value} => println!("{} is evens!", value),
+    }
 }
