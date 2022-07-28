@@ -9,8 +9,8 @@ Youtube: Rust Tutorial from [Tech With Tim](https://www.youtube.com/watch?v=T_Kr
 
 1.  [Installation](#Installation)
 2.  [Rust Tools](#Rust-Tools)
-3.  [Chapter III](#chapter-iii)
-4.  [Chapter IV](#chapter-iv)
+3.  [Variabes Constants and Shadowing](#Variabes-Constants-and-Shadowing)
+4.  [Data Types](#Data-Types)
 5.  [Chapter V](#chapter-v)
 6.  [Chapter VI](#chapter-vi)
 7.  [Chapter VII](#chapter-vii)
@@ -50,12 +50,32 @@ rustc main.rs
 rustfmt main.rs
 ```
 
-## Chapter III
+## Variabes Constants and Shadowing
 
-Enter information about Chapter III.
-
+Variables
 ```
-# this ia a code block for chapter iii.
+# create a constant i32
+let x: i32 = 1;
+
+# create a mutable i32
+let mut x: i32 = 2;
+```
+
+Scopes (Shadowing)
+```
+fn main(){
+    let x = 0;
+    { // scope starts
+        let x = x + 1; // added 1 to the outer x
+        println!("x = {}", x); // 1
+    } // scope ends
+    let x = x + 2; // does not add the inner x
+}
+```
+
+Constants
+```
+const SECONDS_IN_MINUTE: u32 = 60;
 ```
 
 ## Chapter IV
