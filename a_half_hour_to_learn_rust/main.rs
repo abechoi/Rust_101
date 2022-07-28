@@ -95,6 +95,10 @@ fn main() {
     let z = x;
     odds_or_evens(z);
 
+    let tup: (i32, bool, char) = (1, true, 'a');
+
+    println!("({}, {}, {})", tup.0, tup.1, tup.2);
+
 }
 
 fn number_to_string(number: i32) -> String{

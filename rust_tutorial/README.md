@@ -78,12 +78,31 @@ Constants
 const SECONDS_IN_MINUTE: u32 = 60;
 ```
 
-## Chapter IV
+## Data Types
 
-Enter information about Chapter IV.
+Integers: i8 i16 i32 i64 i128
 
+Unsigned Integers: u8 u16 u32 u64 u128 u256
+
+Floats: f32 f64
+
+Booleans: bool - 1 or true, 0 or false
+
+Character: char - any character in single quotation marks, 'a'
+
+Tuples
 ```
-# this ia a code block for chapter iv.
+# creates a tuple
+let tup: (i32, bool, char) = (1, true, 'a');
+
+# print each element
+println!("({}, {}, {})", tup.0, tup.1, tup.2);
+```
+
+Arrays
+```
+# creates an array of i32 with 5 elements
+let arr: [i32; 5] = [1, 2, 3, 4, 5];
 ```
 
 ## Chapter V
