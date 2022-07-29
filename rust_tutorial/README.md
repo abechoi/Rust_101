@@ -11,7 +11,7 @@ Youtube: Rust Tutorial from [Tech With Tim](https://www.youtube.com/watch?v=T_Kr
 2.  [Rust Tools](#Rust-Tools)
 3.  [Variabes Constants and Shadowing](#Variabes-Constants-and-Shadowing)
 4.  [Data Types](#Data-Types)
-5.  [Chapter V](#chapter-v)
+5.  [Console Input](#Console-Input)
 6.  [Chapter VI](#chapter-vi)
 7.  [Chapter VII](#chapter-vii)
 8.  [Chapter VIII](#chapter-viii)
@@ -105,12 +105,22 @@ Arrays
 let arr: [i32; 5] = [1, 2, 3, 4, 5];
 ```
 
-## Chapter V
+## Console Input
 
-Enter information about Chapter V.
-
+IO module is used to read user input via command line.
 ```
-# this ia a code block for chapter v.
+# call the io (input/output) module
+use std::io;
+
+fn main() {
+
+    let mut input = String::new();
+
+    # reads line from command line
+    io::stdin().read_line(&mut input).expect("failed to read line");
+    println!("{}", input);
+}
+
 ```
 
 ## Chapter VI

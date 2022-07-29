@@ -1,5 +1,6 @@
 use std::cmp::{min, max};
 use std::marker::Copy;
+// use std::io;
 
 struct Person {
     name: String,
@@ -91,14 +92,14 @@ fn main() {
     odds_or_evens(x);
     odds_or_evens(y);
 
-
     let z = x;
     odds_or_evens(z);
 
-    let tup: (i32, bool, char) = (1, true, 'a');
-
-    println!("({}, {}, {})", tup.0, tup.1, tup.2);
-
+    // Read user input using the IO module
+    // let mut input = String::new();
+    // io::stdin().read_line(&mut input).expect("Invald input.");
+    // println!("{}", input);
+    
 }
 
 fn number_to_string(number: i32) -> String{

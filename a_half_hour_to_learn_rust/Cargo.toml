@@ -1,0 +1,6 @@
+[package]
+name = "a_half_hour_to_learn_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
