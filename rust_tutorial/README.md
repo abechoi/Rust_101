@@ -11,12 +11,11 @@ Youtube: Rust Tutorial from [Tech With Tim](https://www.youtube.com/watch?v=T_Kr
 2.  [Rust Tools](#Rust-Tools)
 3.  [Variabes Constants and Shadowing](#Variabes-Constants-and-Shadowing)
 4.  [Data Types](#Data-Types)
-5.  [Console Input](#Console-Input)
+5.  [Arithmetic and Type Casting](#Arithmetic-and-Type-Casting)
 6.  [Chapter VI](#chapter-vi)
 7.  [Chapter VII](#chapter-vii)
 8.  [Chapter VIII](#chapter-viii)
 9.  [Chapter IX](#chapter-ix)
-10. [Chapter X](#chapter-x)
 
 
 ## Installation
@@ -123,12 +122,15 @@ fn main() {
 
 ```
 
-## Chapter VI
+## Arithmetic and Type Casting
 
-Enter information about Chapter VI.
-
+- You can only use arithmetic of the same types:
+  - ie. i32 + i32, or u8 - u8
 ```
-# this ia a code block for chapter vi.
+fn main() {
+    let x: u8 = 256; // 0 - 255
+    let y: i8 = 10; // -128 - 127
+}
 ```
 
 ## Chapter VII
