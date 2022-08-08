@@ -37,6 +37,4 @@ pub mod cards {
             println!("{} {}", self.rank, self.suit);
         }
     }
-
-    
 }
