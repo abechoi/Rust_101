@@ -16,7 +16,7 @@ For this project I want to create a Deck mod with a Card struct, to import for d
 
 Lessons learned:
 
-1. I tried to use an array of cards, because I knew I could use 52 as the fixed length, but I had a lot of issues assigning each element within a for loop.
+I tried to use an array of cards, because I knew I could use 52 as the fixed length, but I had a lot of issues assigning each element within a for loop.
 
 example:
 ```
@@ -35,7 +35,7 @@ for i in 0..52 {
 }
 ```
 
-The array was mutable, and I tried to add let in front deck[i], but I kept getting an unassigned error, so I used Vectors instead and had a much easier time.
+The array was mutable, and I tried to add `let` in front `deck[i]`, but I kept getting an unassigned error, so I used Vectors instead and had a much easier time.
 
 ## Using the Mod
 
