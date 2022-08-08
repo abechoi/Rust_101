@@ -35,7 +35,7 @@ for i in 0..52 {
 }
 ```
 
-The array was mutable, and I tried to add `let` in front `deck[i]`, but I kept getting an unassigned error, so I used Vectors instead and had a much easier time.
+The array was mutable, and I tried to add `let` in front of `deck[i]`, but I kept getting an unassigned error, so I used Vectors instead and had a much easier time.
 
 ## Using the Mod
 
