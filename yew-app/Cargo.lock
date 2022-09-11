@@ -433,6 +433,9 @@ dependencies = [
 name = "yew-app"
 version = "0.1.0"
 dependencies = [
+ "gloo-file",
+ "js-sys",
+ "web-sys",
  "yew",
 ]
 

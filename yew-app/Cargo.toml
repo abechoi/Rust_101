@@ -4,5 +4,10 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-# you can check the latest version here: https://crates.io/crates/yew
+js-sys = "0.3"
 yew = "0.19"
+gloo-file = "0.2"
+
+[dependencies.web-sys]
+version = "0.3"
+features = ["File"]
